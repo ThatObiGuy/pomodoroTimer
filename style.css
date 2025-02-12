@@ -1,0 +1,57 @@
+/**
+We are to utilize CSS to style the page with a background color,
+green start button,
+red stop button,
+yellow pause button.
+and when the timer reaches 1 minute, change the timer text color to red.
+*/
+
+* {background-color: #021F31} /* Setting Background colour */
+
+p{
+    color: white;
+    font-weight: bold;
+
+} /* Making all timer elements appear the same */
+
+#timerSection{
+    display: flex;
+    justify-content: center;
+
+} /* Creating a flexbox for the timer */
+
+#buttonSection{
+    display: flex;
+    justify-content: center;
+
+} /* Creating a flexbox for buttons */
+
+#start{
+    background-color: green;
+
+} /* Using ID to make start button green */
+
+#pause{
+    background-color: yellow;
+    color: black;
+
+} /* Using ID to make pause button yellow, and over-riding white text as it's less visable */
+
+#stop{
+    background-color: red;
+
+} /* Using ID to make stop button red */
+
+.button{
+    color: white;
+    font-weight: bold;
+
+} /* Using button class to efficiently standardise appearance */
+
+#buttonSection{
+    display: flex;
+    justify-content: center;
+
+} /* Creating a flexbox for buttons */
+
+
