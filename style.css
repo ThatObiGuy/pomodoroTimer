@@ -6,7 +6,10 @@ yellow pause button.
 and when the timer reaches 1 minute, change the timer text color to red.
 */
 
-* {background-color: #021F31} /* Setting Background colour */
+body {
+    background-color: #021F31;
+} /* Setting Background colour */
+
 
 p{
     color: white;
@@ -14,15 +17,29 @@ p{
 
 } /* Making all timer elements appear the same */
 
-#timerSection{
+#appleSVG{
     display: flex;
     justify-content: center;
+    position: relative;
+
+} /* Creating a flexbox for the apple graphic */
+
+#timerSection{
+    display: flex;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    scale: 300%;
+    transform: translate(-50%, -50%);
 
 } /* Creating a flexbox for the timer */
 
 #buttonSection{
     display: flex;
-    justify-content: center;
+    position: absolute;
+    top: 60%;
+    left: 46%;
+    transform: translate(-50%, -50%);
 
 } /* Creating a flexbox for buttons */
 
@@ -45,6 +62,8 @@ p{
 .button{
     color: white;
     font-weight: bold;
+    padding: 5px 10px; /* Makes buttons chunkier*/
+    margin: 5px; /* Puts a bit of space between the buttons*/
 
 } /* Using button class to efficiently standardise appearance */
 
