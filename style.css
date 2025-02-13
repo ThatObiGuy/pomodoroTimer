@@ -33,6 +33,7 @@ p{
     transform: translate(-50%, -50%);
 
 } /* Creating a flexbox for the timer */
+/* Then we use the absolute position to place it within the apple, and translate centers the section after the move*/
 
 #buttonSection{
     display: flex;
@@ -40,8 +41,10 @@ p{
     top: 60%;
     left: 46%;
     transform: translate(-50%, -50%);
+    font-family: roboto;
 
 } /* Creating a flexbox for buttons */
+/* Similar craic to timerSection*/
 
 #start{
     background-color: green;
@@ -66,11 +69,5 @@ p{
     margin: 5px; /* Puts a bit of space between the buttons*/
 
 } /* Using button class to efficiently standardise appearance */
-
-#buttonSection{
-    display: flex;
-    justify-content: center;
-
-} /* Creating a flexbox for buttons */
 
 
