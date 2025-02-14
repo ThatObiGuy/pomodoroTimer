@@ -2,6 +2,8 @@
     <head>
         <title>Pomodoro Timer</title>
         <link rel="stylesheet", href="style.css" />
+        <link href='https://fonts.googleapis.com/css2?family=Orbitron' rel="stylesheet"> <!-- Necesaary for stylesheets, timer font-->
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'> <!-- Necesaary for stylesheets, button font-->
         <!--
         Introduction
         In this assignment, we are to create a simple pomodoro application.
@@ -124,11 +126,11 @@
         </div>
 
         <div id="timerSection">
-            <p id="minutes">25</p> <!-- Seperating out min/sec/mili allows for easier implementation of timer-->
-            <p>:</p> <!-- Colons for formatting-->
-            <p id="seconds">00</p> 
-            <p>:</p> 
-            <p id="miliseconds">00</p>
+            <p class="time" id="minutes">25</p> <!-- Seperating out min/sec/mili allows for easier implementation of timer-->
+            <p id="leftColon">:</p> <!-- Colons for formatting-->
+            <p class="time" id="seconds">00</p> 
+            <p id="rightColon">:</p> 
+            <p class="time" id="miliseconds">00</p>
 
         </div>
         
