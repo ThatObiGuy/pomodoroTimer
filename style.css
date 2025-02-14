@@ -1,9 +1,14 @@
 /**
 We are to utilize CSS to style the page with a background color,
-green start button,
-red stop button,
-yellow pause button.
-and when the timer reaches 1 minute, change the timer text color to red.
+> green start button,
+> red stop button,
+> yellow pause button.
+> effect when timer reaches 1 minute, change the timer text color to red.
+> and add a background color with rounded corners of 5px to make it stand out from the apple.
+> style each button with the Roboto font family, white font color,
+> add a black border hovering effect on the buttons.
+> style the clock with the Orbitron font.
+> When hovered over, the clock should turn yellow; otherwise, it should be white.
 */
 
 body {
@@ -14,8 +19,14 @@ body {
 p{
     color: white;
     font-weight: bold;
+    font-family: Orbitron;
 
 } /* Making all timer elements appear the same */
+
+.time{
+    border-radius: 5px;
+    background: #FF5146;
+}
 
 #appleSVG{
     display: flex;
@@ -28,12 +39,16 @@ p{
     display: flex;
     position: absolute;
     top: 60%;
-    left: 50%;
-    scale: 300%;
+    left: 51%;
+    scale: 280%;
     transform: translate(-50%, -50%);
 
 } /* Creating a flexbox for the timer */
 /* Then we use the absolute position to place it within the apple, and translate centers the section after the move*/
+
+#timerSection:hover > p{ /* Syntax for reffering to all paragraph elements within the timer section*/
+    color: yellow;
+} /* now timer text will be yellow while you hover over it*/
 
 #buttonSection{
     display: flex;
@@ -41,10 +56,22 @@ p{
     top: 60%;
     left: 46%;
     transform: translate(-50%, -50%);
-    font-family: roboto;
 
 } /* Creating a flexbox for buttons */
 /* Similar craic to timerSection*/
+
+.button{
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px; /* Makes buttons chunkier*/
+    margin: 5px; /* Puts a bit of space between the buttons*/
+    font-family: Roboto;
+
+} /* Using button class to efficiently standardise appearance */
+
+.button:hover{
+    border: 4px solid #021F31;
+} /* now buttons will get a border when you hover above them*/
 
 #start{
     background-color: green;
@@ -61,13 +88,3 @@ p{
     background-color: red;
 
 } /* Using ID to make stop button red */
-
-.button{
-    color: white;
-    font-weight: bold;
-    padding: 5px 10px; /* Makes buttons chunkier*/
-    margin: 5px; /* Puts a bit of space between the buttons*/
-
-} /* Using button class to efficiently standardise appearance */
-
-
