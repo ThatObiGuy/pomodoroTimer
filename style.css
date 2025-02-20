@@ -15,6 +15,10 @@ body {
     background-color: #021F31;
 } /* Setting Background colour */
 
+.navbar {
+    background-color: yellow;
+    position: sticky; /*It'll stay at the top of the page*/
+}
 
 p{
     color: white;
